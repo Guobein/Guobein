@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业-level1</title>
+    <link rel="stylesheet" type="text/css" href="MyStyle.css">
+</head>
+<body>
+    <div class="login">
+        <div class="part1">
+            <span style="color: #02a7de;font-size: 14px;margin-right: 20px;">密码登录</span>
+            <span style="font-size: 14px;color: #555;">短信登录</span>
+        </div>
+        <div class="part2">
+            <div>
+                <input id="username" type="text" value placeholder="你的手机号/邮箱" >
+                <div class="clear"></div>
+            </div>
+            <div>
+                <input id="password" type="password" placeholder="密码" >
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="part3">
+            <div>
+                <input type="checkbox" checked style="margin-right: 6px;"> 
+                <span style="color: #717171;">记住我</span>
+                <span style="color: #bbb;margin-left: 8px;">不是自己的电脑上不要勾选此项</span>
+            </div>
+            <div>
+                <a target="_blank" href="https://passport.bilibili.com/register/findpassword.html#/verify" style="float: right;margin-left: 10px;color: #00a1d6;text-decoration: none;">忘记密码?</a>
+                <a target="_blank" href="https://www.bilibili.com/blackboard/help.html#/?qid=01c16d22f6bb44fd976e8874142b60b6" style="float: right;margin-left: 38px;color: #00a1d6;text-decoration: none;">无法验证?</a>
+            </div>
+        </div>
+        <div class="part4">
+            <a class="DengLu">登录</a>
+            <a class="ZhuCe" href="https://passport.bilibili.com/register/phone.html#/phone" class="btn btn-reg">注册</a>
+        </div>
+        <div>
+            <div class="part5">
+                <img src="weibo.png" style="width: 21px;height: 21px;vertical-align: middle;">
+                <a class="weibo" href="https://api.weibo.com/oauth2/authorize?client_id=2841902482&redirect_uri=https%3A%2F%2Fpassport.bilibili.com%2Flogin%2Fsnsback%3Fsns%3Dweibo%26state%3D5ab768e0695811eba8c48a75de9ae836&scope=email###">微博账号登录</a>
+                <img src="qq.png" style="width: 21px;height: 21px;vertical-align: middle;margin-left: 20px;">
+                <a class="qq" href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&state=authorize&client_id=101135748&redirect_uri=https%3A%2F%2Fpassport.bilibili.com%2Flogin%2Fsnsback%3Fsns%3Dqq%26%26state%3D5ab768e0695811eba8c48a75de9ae836&scope=do_like,get_user_info,get_simple_userinfo,get_vip_info,get_vip_rich_info,add_one_blog,list_album,upload_pic,add_album,list_photo,get_info,add_t,del_t,add_pic_t,get_repost_list,get_other_info,get_fanslist,get_idollist,add_idol,del_idol,get_tenpay_addr">QQ账号登录</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
