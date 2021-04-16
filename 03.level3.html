@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>level-3</title>
+</head>
+
+<body>
+    <script>
+        function Student(name) {
+            function People(name) {
+                this.task = []
+                let fn = () => {
+                    console.log("Hi! This is " + name + "!");
+                    this.next();
+                }
+                this.task.push(fn);
+                setTimeout(() => {
+                    this.next();
+                }, 0);
+                return this;
+            }
+            People.prototype.sleep = function (time) {
+                let that = this;
+                let fn = () => {
+                    setTimeout(() => {
+                        console.log("Wake up after " + time);
+                        that.next();
+                    }, time * 1000)
+                }
+                this.task.push(fn);
+                return this;
+            }
+
+            People.prototype.sleepFirst = function (time) {
+                let that = this;
+                let fn = () => {
+                    setTimeout(() => {
+                        console.log("Wake up after " + time);
+                        that.next();
+                    }, time * 1000)
+                }
+                this.task.unshift(fn);
+                return this;
+            }
+
+            People.prototype.study = function (course) {
+                let that = this;
+                let fn = () => {
+                    console.log("Study " + course + "~");
+                    that.next();
+                }
+                this.task.push(fn);
+                return this;
+            }
+
+            People.prototype.next = function (course) {
+                let fn = this.task.shift();
+                fn && fn();
+            }
+            return new People(name);
+        }
+        Student('fxy').sleepFirst(5).study('Ajax');
+    </script>
+</body>
+
+</html>
