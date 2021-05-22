@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+div, footer, li, ol, p, section, ul {
+    box-sizing: border-box;
+}
+
+ol {
+    white-space: nowrap;
+    overflow: auto;
+    list-style: none;
+}
+
+ul {
+    white-space: nowrap;
+    overflow: auto;
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    width: 16xw;
+    display:inline-block;
+}
+
+img {
+    width: 6vmin;
+    height: 6vmin;
+}
+
+.part1 {
+    background-image: url(beijing.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 120vmin;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    color: #fff;
+}
+
+.part2 {
+    background: #fff;
+    width: 100vw;
+    height: 27.5vmin;
+    padding-top: 7vmin;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2.7vmin;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+
+.part3 {
+    background: #fff;
+    width: 100vw;
+    height: 32vmin;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2.7vmin;
+    padding-top: 4vmin;
+}
+
+.part4 {
+    background: #fff;
+    width: 100vw;
+    height: 80vmin;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2.7vmin;
+    padding-top: 4vmin;
+}
+
+.part5 {
+    background: #fff;
+    width: 100vw;
+    height: 40vmin;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2.7vmin;
+}
+
+.search {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: transform .25s ease-in-out;
+}
+
+.part3-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.part4-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#pica,#picb {
+    width: 6vmin;
+    height: 6vmin;
+}
+
+.item {
+    float: left;
+    width: 50%;
+    height: 13vmin;
+    font-size: 4vmin;
+    color: #434343;
+    line-height: 14px;
+    padding: 0 20px;
+}
+
+.top {
+    height: 7vmin;
+    margin-bottom: 1.5vmin;
+}
+
+.bottom {
+    height: 7vmin;
+}
+
+.daytimes {
+    font-size: 3.5vmin;
+    margin-right: 10vmin;
+    width: 3.84615%;
+    height: 24vmin;
+}
+
+.seven {
+    font-size: 3.5vmin;
+    width: 16%;
+    height: 59vmin;
+    text-align: center;
+    margin-right: 5vmin;
+}
+
+#in-chart {
+    width: 70vw;
+}
+
+#chart {
+    margin-right: 0vmin;
+    left: 0;
+    width: 100vmin;
+    height: 60vmin;
+    top: 200vmin;
+    position: absolute;
+}
+
+.pic,.weap {
+    margin: 4vmin auto;
+}
+
+.other {
+    list-style: none;
+    background-color: #fff;
+    text-align: center;
+    width: 25%;
+    height: 94px;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+
+#detail {
+    margin-top: 1.5vmin;
+}
+
+#sh {
+    margin-top: 1vmin;
+    font-size: 4vmin;
+    color: #434343;
+}
+
+#sear {
+    width: 100%;
+    height: 30px;
+    padding: 5px 0 5px 32px;
+    box-sizing: border-box;
+    line-height: 24px;
+    background: #f2f2f2;
+    border-radius: 44px;
+    font-size: 14px;
+    color: #434343;
+    -webkit-appearance: none;
+    border-width: 0;
+}
+
+#htem::after
+{
+    content: "°";
+}
+
+.dtem::after {
+    content: "°";
+}
+
+#tdtem::after {
+    content: "°";
+}
+
+#tmtem::after {
+    content: "°";
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
